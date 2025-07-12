@@ -1,13 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>TodoApp</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head> 
+  <meta charset="UTF‑8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Web Page with Ad & Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
-  <app-root></app-root>
+  <nav>
+    <div class="logo">MySite</div>
+    <button id="loginBtn">Login</button>
+  </nav>
+
+  <!-- Advertisement Banner -->
+  <div class="ad-banner">
+    <!-- Example: <img src="ad.jpg" alt="Sponsored Ad"> or <div id="ad-placeholder"></div> -->
+    <p>Your Ad Here!</p>
+  </div>
+
+  <!-- Modal Login Form -->
+  <div id="loginModal" class="modal">
+    <form class="modal-content">
+      <span class="close" id="closeBtn">&times;</span>
+      <h2>Login</h2>
+      <label>Email</label><input type="email" required>
+      <label>Password</label>
+      <input type="password" required>
+      <button type="submit">Login Now</button>
+      <label><input type="checkbox"> Remember me</label>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
